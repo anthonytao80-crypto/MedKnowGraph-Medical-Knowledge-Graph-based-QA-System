@@ -88,6 +88,12 @@ Run the following script to construct the medical knowledge graph in Neo4j:
 ```shell
 python build_medicalgraph.py
 ```
+2. Open the graph
+Run the following command in terminal
+```shell
+neo4j.pat console
+```
+
 2. Chat via command line
 You can directly interact with the agent through the terminal by running:
 ```shell
