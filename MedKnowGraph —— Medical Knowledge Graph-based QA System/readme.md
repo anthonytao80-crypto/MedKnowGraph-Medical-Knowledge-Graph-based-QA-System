@@ -82,7 +82,7 @@ it means the installation was successful
 ### 2.3 Dowload neo4j
 Download and install neo4j for your operating system.
 
-# 3. How to use
+## 3. How to use
 1. Build the medical knowledge graph
 Run the following script to construct the medical knowledge graph in Neo4j:
 ```shell
