@@ -1,10 +1,10 @@
 from langchain_core.tools import tool
 from py2neo import Graph
 
-# --------------------  核心工具函数 --------------------
+# --------------------  Core Tool Functions --------------------
 
 def get_tools():
-    """构建 LangChain 工具列表"""
+    """Construct the LangChain tool list"""
 
     class AnswerSearcher:
         def __init__(self):
@@ -12,7 +12,7 @@ def get_tools():
             self.num_limit = 20
 
         def search_main(self, sqls):
-            """执行 Cypher 查询"""
+            """Execute Cypher queries"""
             retrive = []
             for sql_ in sqls:
                 queries = sql_['sql']
@@ -23,7 +23,7 @@ def get_tools():
 
 
     class QuestionPaser:
-        """生成 Cypher 查询"""
+        """Generate Cypher queries"""
 
         def build_entitydict(self, args):
             entity_dict = {}
@@ -50,48 +50,48 @@ def get_tools():
             if not entities:
                 return []
             sql = []
-            # 查询疾病的原因
+            # Query the causes of a disease
             if question_type == 'disease_cause':
                 sql = ["MATCH (m:Disease) where m.name = '{0}' return m.name, m.cause".format(i) for i in entities]
 
-            # 查询疾病的防御措施
+            # Query the preventive measures for a disease
             elif question_type == 'disease_prevent':
                 sql = ["MATCH (m:Disease) where m.name = '{0}' return m.name, m.prevent".format(i) for i in entities]
 
-            # 查询疾病的持续时间
+            # Query the duration of a disease
             elif question_type == 'disease_lasttime':
                 sql = ["MATCH (m:Disease) where m.name = '{0}' return m.name, m.cure_lasttime".format(i) for i in
                        entities]
 
-            # 查询疾病的治愈概率
+            # Query the cure probability of a disease
             elif question_type == 'disease_cureprob':
                 sql = ["MATCH (m:Disease) where m.name = '{0}' return m.name, m.cured_prob".format(i) for i in entities]
 
-            # 查询疾病的治疗方式
+            # Query the treatment methods of a disease
             elif question_type == 'disease_cureway':
                 sql = ["MATCH (m:Disease) where m.name = '{0}' return m.name, m.cure_way".format(i) for i in entities]
 
-            # 查询疾病的易发人群
+            # Query the susceptible population for a disease
             elif question_type == 'disease_easyget':
                 sql = ["MATCH (m:Disease) where m.name = '{0}' return m.name, m.easy_get".format(i) for i in entities]
 
-            # 查询疾病的相关介绍
+            # Query general description of a disease
             elif question_type == 'disease_desc':
                 sql = ["MATCH (m:Disease) where m.name = '{0}' return m.name, m.desc".format(i) for i in entities]
 
-            # 查询疾病有哪些症状
+            # Query symptoms of a disease
             elif question_type == 'disease_symptom':
                 sql = [
                     "MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) where m.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
 
-            # 查询症状会导致哪些疾病
+            # Query diseases caused by a symptom
             elif question_type == 'symptom_disease':
                 sql = [
                     "MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) where n.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
 
-            # 查询疾病的并发症
+            # Query complications of a disease
             elif question_type == 'disease_acompany':
                 sql1 = [
                     "MATCH (m:Disease)-[r:acompany_with]->(n:Disease) where m.name = '{0}' return m.name, r.name, n.name".format(
@@ -100,13 +100,13 @@ def get_tools():
                     "MATCH (m:Disease)-[r:acompany_with]->(n:Disease) where n.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
                 sql = sql1 + sql2
-            # 查询疾病的忌口
+            # Query foods to avoid for a disease
             elif question_type == 'disease_not_food':
                 sql = [
                     "MATCH (m:Disease)-[r:no_eat]->(n:Food) where m.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
 
-            # 查询疾病建议吃的东西
+            # Query recommended foods for a disease
             elif question_type == 'disease_do_food':
                 sql1 = [
                     "MATCH (m:Disease)-[r:do_eat]->(n:Food) where m.name = '{0}' return m.name, r.name, n.name".format(
@@ -116,13 +116,13 @@ def get_tools():
                         i) for i in entities]
                 sql = sql1 + sql2
 
-            # 已知忌口查疾病
+            # Query diseases based on foods to avoid
             elif question_type == 'food_not_disease':
                 sql = [
                     "MATCH (m:Disease)-[r:no_eat]->(n:Food) where n.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
 
-            # 已知推荐查疾病
+            # Query diseases based on recommended foods
             elif question_type == 'food_do_disease':
                 sql1 = [
                     "MATCH (m:Disease)-[r:do_eat]->(n:Food) where n.name = '{0}' return m.name, r.name, n.name".format(
@@ -132,7 +132,7 @@ def get_tools():
                         i) for i in entities]
                 sql = sql1 + sql2
 
-            # 查询疾病常用药品－药品别名记得扩充
+            # Query common drugs for a disease (remember to expand drug aliases)
             elif question_type == 'disease_drug':
                 sql1 = [
                     "MATCH (m:Disease)-[r:common_drug]->(n:Drug) where m.name = '{0}' return m.name, r.name, n.name".format(
@@ -142,7 +142,7 @@ def get_tools():
                         i) for i in entities]
                 sql = sql1 + sql2
 
-            # 已知药品查询能够治疗的疾病
+            # Query diseases treatable by a known drug
             elif question_type == 'drug_disease':
                 sql1 = [
                     "MATCH (m:Disease)-[r:common_drug]->(n:Drug) where n.name = '{0}' return m.name, r.name, n.name".format(
@@ -151,20 +151,20 @@ def get_tools():
                     "MATCH (m:Disease)-[r:recommand_drug]->(n:Drug) where n.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
                 sql = sql1 + sql2
-            # 查询疾病应该进行的检查
+            # Query medical checks needed for a disease
             elif question_type == 'disease_check':
                 sql = [
                     "MATCH (m:Disease)-[r:need_check]->(n:Check) where m.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
 
-            # 已知检查查询疾病
+            # Query diseases based on known medical checks
             elif question_type == 'check_disease':
                 sql = [
                     "MATCH (m:Disease)-[r:need_check]->(n:Check) where n.name = '{0}' return m.name, r.name, n.name".format(
                         i) for i in entities]
 
             return sql
-    # --------------------  LangChain 工具 --------------------
+    # --------------------  LangChain Tool --------------------
     @tool
     def retriever_tool(entities: list, classify: str):
         """
@@ -197,16 +197,16 @@ def get_tools():
         parser = QuestionPaser()
         searcher = AnswerSearcher()
 
-        # 1. 构造输入
+        # 1. Construct input
         classify_input = {
             "args": {entity: ["disease"] for entity in entities},  # 假设实体类型都是疾病
             "question_types": [classify]
         }
 
-        # 2. 生成查询语句
+        # 2. Generate query statements
         sqls = parser.parser_main(classify_input)
 
-        # 3. 执行查询
+        # 3. Execute queries
         results = searcher.search_main(sqls)
 
         return results
