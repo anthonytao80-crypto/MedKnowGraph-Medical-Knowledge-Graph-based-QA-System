@@ -2,7 +2,7 @@
 
 ## 1.Introduction
 
-<img src="graph.png" style="float:left"/>
+<img src="./Medical Knowledge Graph-based QA System/graph.png" style="float:left"/>
 
 This project presents a Graph-RAG based medical question-answering agent, which integrates knowledge graph reasoning, retrieval-augmented generation (RAG), and function calling to provide accurate and interpretable responses to medical questions.
 
@@ -107,3 +107,4 @@ python main.py
 python webUI.py
 ```
 Once started, open the URL shown in the terminal (typically http://127.0.0.1:7860) to access the web interface and chat with the agent.
+
