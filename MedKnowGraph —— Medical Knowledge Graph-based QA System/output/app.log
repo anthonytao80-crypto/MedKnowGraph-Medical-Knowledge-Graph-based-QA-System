@@ -1,0 +1,482 @@
+2025-10-26 13:49:11,792 - __main__ - INFO - Start the server on port 8012
+2025-10-26 13:49:13,874 - ragAgent - DEBUG - Tool 'retriever_tool' routed to 'grade_documents' (retrieval tool)
+2025-10-26 13:49:13,875 - ragAgent - INFO - Initialized ToolConfig with tools: {'retriever_tool'}, routing: {'retriever_tool': 'grade_documents'}
+2025-10-26 13:49:13,877 - __main__ - INFO - Database connection pool initialized
+2025-10-26 13:49:13,880 - __main__ - DEBUG - Database connection pool initialized
+2025-10-26 13:49:13,880 - ragAgent - INFO - Connection db_connection_pool status: 0/20 connections in use
+2025-10-26 13:49:13,911 - ragAgent - INFO - Connection db_connection_pool status: OK, test connection successful
+2025-10-26 13:49:14,237 - ragAgent - INFO - Graph visualization saved as graph.png
+2025-10-26 13:50:09,002 - __main__ - INFO - The user's input is: 头晕可能是什么原因
+2025-10-26 13:50:09,033 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:50:09,035 - ragAgent - INFO - agent question:content='头晕可能是什么原因' additional_kwargs={} response_metadata={} id='964c100a-61aa-46d2-bd30-cbd18db7543b'
+2025-10-26 13:50:10,676 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_agent.txt
+2025-10-26 13:50:12,307 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:12,442 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:12,662 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:12,788 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:12,791 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:13,882 - ragAgent - INFO - Connection db_connection_pool status: 0/20 connections in use
+2025-10-26 13:50:14,907 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:50:14,909 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:50:14,910 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_grade.txt
+2025-10-26 13:50:15,825 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:50:15,826 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 0
+2025-10-26 13:50:15,827 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:50:15,829 - ragAgent - INFO - Rewriting query
+2025-10-26 13:50:15,830 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_rewrite.txt
+2025-10-26 13:50:17,317 - ragAgent - INFO - Rewrite count: 1
+2025-10-26 13:50:17,320 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:50:17,322 - ragAgent - INFO - agent question:content='经常感到头晕可能由哪些具体原因引起？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--bdc53235-81bc-421a-bb66-c6a8d974c573'
+2025-10-26 13:50:18,447 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:50:19,794 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:20,000 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:20,174 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:20,260 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:20,264 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:22,323 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:50:22,327 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:50:22,328 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:50:23,179 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:50:23,181 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 1
+2025-10-26 13:50:23,182 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:50:23,184 - ragAgent - INFO - Rewriting query
+2025-10-26 13:50:23,185 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:50:24,512 - ragAgent - INFO - Rewrite count: 2
+2025-10-26 13:50:24,516 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:50:24,517 - ragAgent - INFO - agent question:content='经常性头晕可能由哪些具体健康问题引起？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--0415d58a-d8bc-4ba1-8301-f97d1bc2000e'
+2025-10-26 13:50:25,429 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:50:26,613 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:26,726 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:26,828 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:26,922 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:26,924 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:28,971 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:50:28,974 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:50:28,975 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:50:29,927 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:50:29,929 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 2
+2025-10-26 13:50:29,930 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:50:29,933 - ragAgent - INFO - Rewriting query
+2025-10-26 13:50:29,934 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:50:31,226 - ragAgent - INFO - Rewrite count: 3
+2025-10-26 13:50:31,230 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:50:31,231 - ragAgent - INFO - agent question:content='经常性头晕可能由哪些常见原因引起？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--0446292d-1f71-4e89-a220-6933dc1a6fbc'
+2025-10-26 13:50:32,160 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:50:33,269 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:33,382 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:33,475 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:33,596 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:33,600 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:35,648 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:50:35,652 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:50:35,654 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:50:36,524 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:50:36,526 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 3
+2025-10-26 13:50:36,527 - ragAgent - INFO - Max rewrite limit reached, proceeding to generate
+2025-10-26 13:50:36,531 - ragAgent - INFO - Generating final response
+2025-10-26 13:50:36,532 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_generate.txt
+2025-10-26 13:50:37,318 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:50:37,319 - __main__ - INFO - Streaming chunk from generate: 问题
+2025-10-26 13:50:37,337 - __main__ - INFO - Streaming chunk from generate: 和agent任务
+2025-10-26 13:50:37,380 - __main__ - INFO - Streaming chunk from generate: 不相关
+2025-10-26 13:50:37,401 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:50:55,741 - __main__ - INFO - The user's input is: 肺结核该吃什么药
+2025-10-26 13:50:55,755 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:50:55,756 - ragAgent - INFO - agent question:content='肺结核该吃什么药' additional_kwargs={} response_metadata={} id='81c8c02b-acef-43eb-a6f8-4d6fc647e921'
+2025-10-26 13:50:56,633 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:50:58,418 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:58,626 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:58,770 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:59,254 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:50:59,258 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:01,303 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:51:01,307 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:51:01,308 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:51:02,154 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:51:02,155 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 0
+2025-10-26 13:51:02,156 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:51:02,158 - ragAgent - INFO - Rewriting query
+2025-10-26 13:51:02,159 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:51:03,528 - ragAgent - INFO - Rewrite count: 1
+2025-10-26 13:51:03,530 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:51:03,532 - ragAgent - INFO - agent question:content='肺结核患者应该服用哪些特定的抗结核药物进行治疗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--80d31c0c-187d-4916-a0b8-5c34befa260a'
+2025-10-26 13:51:04,434 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:51:05,576 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:05,767 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:05,996 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:06,173 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:06,178 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:08,227 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:51:08,230 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:51:08,231 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:51:09,427 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:51:09,429 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 1
+2025-10-26 13:51:09,429 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:51:09,431 - ragAgent - INFO - Rewriting query
+2025-10-26 13:51:09,432 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:51:10,921 - ragAgent - INFO - Rewrite count: 2
+2025-10-26 13:51:10,924 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:51:10,925 - ragAgent - INFO - agent question:content='肺结核患者应该服用哪些药物进行治疗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--e7e45cde-d5d3-43d8-84cd-ef5016d28a44'
+2025-10-26 13:51:12,018 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:51:13,884 - ragAgent - INFO - Connection db_connection_pool status: 0/20 connections in use
+2025-10-26 13:51:13,946 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:14,891 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:15,159 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:15,473 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:15,475 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:17,520 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:51:17,523 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:51:17,524 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:51:18,630 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:51:18,633 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 2
+2025-10-26 13:51:18,633 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:51:18,635 - ragAgent - INFO - Rewriting query
+2025-10-26 13:51:18,636 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:51:21,339 - ragAgent - INFO - Rewrite count: 3
+2025-10-26 13:51:21,343 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:51:21,344 - ragAgent - INFO - agent question:content='治疗肺结核应使用哪些具体的抗结核药物？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--646336cc-3d0b-483d-81bc-3b181a2af6b0'
+2025-10-26 13:51:22,228 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:51:23,319 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:23,432 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:23,571 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:23,733 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:23,735 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:25,765 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:51:25,767 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:51:25,768 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:51:26,637 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:51:26,639 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 3
+2025-10-26 13:51:26,639 - ragAgent - INFO - Max rewrite limit reached, proceeding to generate
+2025-10-26 13:51:26,641 - ragAgent - INFO - Generating final response
+2025-10-26 13:51:26,642 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_generate.txt
+2025-10-26 13:51:27,308 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:51:27,309 - __main__ - INFO - Streaming chunk from generate: 问题
+2025-10-26 13:51:27,856 - __main__ - INFO - Streaming chunk from generate: 和agent任务
+2025-10-26 13:51:28,035 - __main__ - INFO - Streaming chunk from generate: 不相关
+2025-10-26 13:51:28,058 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:51:41,422 - __main__ - INFO - The user's input is: 百日咳该吃什么药
+2025-10-26 13:51:41,434 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:51:41,435 - ragAgent - INFO - agent question:content='百日咳该吃什么药' additional_kwargs={} response_metadata={} id='843a83eb-2206-4b81-871b-d5e1798fd586'
+2025-10-26 13:51:42,368 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:51:44,210 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:44,321 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:44,426 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:44,578 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:44,582 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:46,604 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:51:46,607 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:51:46,608 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:51:48,237 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:51:48,238 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 0
+2025-10-26 13:51:48,239 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:51:48,241 - ragAgent - INFO - Rewriting query
+2025-10-26 13:51:48,243 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:51:49,731 - ragAgent - INFO - Rewrite count: 1
+2025-10-26 13:51:49,734 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:51:49,736 - ragAgent - INFO - agent question:content='成人或儿童患上百日咳后，应该服用哪些药物进行治疗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--24b62ace-4154-4a64-b73f-c81e892d78b0'
+2025-10-26 13:51:50,663 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:51:51,724 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:51,873 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:51,992 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:52,124 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:52,125 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:54,183 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:51:54,185 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:51:54,186 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:51:55,105 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:51:55,107 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 1
+2025-10-26 13:51:55,108 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:51:55,110 - ragAgent - INFO - Rewriting query
+2025-10-26 13:51:55,111 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:51:56,479 - ragAgent - INFO - Rewrite count: 2
+2025-10-26 13:51:56,483 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:51:56,483 - ragAgent - INFO - agent question:content='成人或儿童患上百日咳后，应使用哪些药物进行治疗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--11aaf16c-1b62-4b90-af0c-c0d3e0467182'
+2025-10-26 13:51:57,421 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:51:59,378 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:59,634 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:51:59,850 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:00,102 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:00,104 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:02,146 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:52:02,148 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:52:02,149 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:52:03,290 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:52:03,293 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 2
+2025-10-26 13:52:03,294 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:52:03,297 - ragAgent - INFO - Rewriting query
+2025-10-26 13:52:03,298 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:52:04,217 - ragAgent - INFO - Rewrite count: 3
+2025-10-26 13:52:04,221 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:52:04,222 - ragAgent - INFO - agent question:content='对于百日咳，应该使用哪些药物进行治疗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--09bda735-b188-42ee-a86b-cc8486d3369a'
+2025-10-26 13:52:05,210 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:52:06,409 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:06,590 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:06,963 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:07,329 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:07,331 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:09,362 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:52:09,365 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:52:09,366 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:52:10,358 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:52:10,359 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 3
+2025-10-26 13:52:10,360 - ragAgent - INFO - Max rewrite limit reached, proceeding to generate
+2025-10-26 13:52:10,362 - ragAgent - INFO - Generating final response
+2025-10-26 13:52:10,363 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_generate.txt
+2025-10-26 13:52:10,892 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:52:10,894 - __main__ - INFO - Streaming chunk from generate: 问题
+2025-10-26 13:52:10,963 - __main__ - INFO - Streaming chunk from generate: 和agent任务
+2025-10-26 13:52:11,034 - __main__ - INFO - Streaming chunk from generate: 不相关
+2025-10-26 13:52:11,055 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:52:13,886 - ragAgent - INFO - Connection db_connection_pool status: 0/20 connections in use
+2025-10-26 13:52:33,103 - __main__ - INFO - The user's input is: 肺气肿原因
+2025-10-26 13:52:33,114 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:52:33,117 - ragAgent - INFO - agent question:content='肺气肿原因' additional_kwargs={} response_metadata={} id='54cbb407-3f34-4ef5-a934-c011e304bb01'
+2025-10-26 13:52:34,096 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:52:35,994 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:36,206 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:36,409 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:36,597 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:36,599 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:38,647 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:52:38,649 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:52:38,650 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:52:39,596 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:52:39,598 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 0
+2025-10-26 13:52:39,599 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:52:39,602 - ragAgent - INFO - Rewriting query
+2025-10-26 13:52:39,604 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:52:40,595 - ragAgent - INFO - Rewrite count: 1
+2025-10-26 13:52:40,597 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:52:40,599 - ragAgent - INFO - agent question:content='导致肺气肿的具体因素有哪些？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--91317312-f97d-4ead-98c4-0a4f97b9f7c7'
+2025-10-26 13:52:41,522 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:52:42,775 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:42,959 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:43,120 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:43,289 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:43,291 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:45,327 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:52:45,330 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:52:45,331 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:52:46,812 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:52:46,813 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 1
+2025-10-26 13:52:46,814 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:52:46,817 - ragAgent - INFO - Rewriting query
+2025-10-26 13:52:46,818 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:52:47,737 - ragAgent - INFO - Rewrite count: 2
+2025-10-26 13:52:47,741 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:52:47,742 - ragAgent - INFO - agent question:content='肺气肿的主要成因有哪些？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--c6fd2782-3390-4d75-a12d-38a9b24ee96f'
+2025-10-26 13:52:48,740 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:52:49,855 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:50,047 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:50,284 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:50,457 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:50,460 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:52,517 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:52:52,521 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:52:52,523 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:52:53,349 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:52:53,351 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 2
+2025-10-26 13:52:53,352 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:52:53,354 - ragAgent - INFO - Rewriting query
+2025-10-26 13:52:53,355 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:52:54,133 - ragAgent - INFO - Rewrite count: 3
+2025-10-26 13:52:54,136 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:52:54,137 - ragAgent - INFO - agent question:content='肺气肿的主要成因有哪些？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--d8751cf3-2b1f-4dec-8f6e-08561620796a'
+2025-10-26 13:52:55,137 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:52:56,397 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:56,602 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:56,787 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:56,972 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:56,975 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:52:59,001 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:52:59,004 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:52:59,006 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:53:00,055 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:53:00,057 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 3
+2025-10-26 13:53:00,057 - ragAgent - INFO - Max rewrite limit reached, proceeding to generate
+2025-10-26 13:53:00,061 - ragAgent - INFO - Generating final response
+2025-10-26 13:53:00,061 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_generate.txt
+2025-10-26 13:53:00,805 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:53:00,807 - __main__ - INFO - Streaming chunk from generate: 问题
+2025-10-26 13:53:00,921 - __main__ - INFO - Streaming chunk from generate: 和agent任务
+2025-10-26 13:53:01,006 - __main__ - INFO - Streaming chunk from generate: 不相关
+2025-10-26 13:53:01,024 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:53:24,393 - __main__ - INFO - Start the server on port 8012
+2025-10-26 13:53:26,703 - ragAgent - DEBUG - Tool 'retriever_tool' routed to 'grade_documents' (retrieval tool)
+2025-10-26 13:53:26,703 - ragAgent - INFO - Initialized ToolConfig with tools: {'retriever_tool'}, routing: {'retriever_tool': 'grade_documents'}
+2025-10-26 13:53:26,705 - __main__ - INFO - Database connection pool initialized
+2025-10-26 13:53:26,707 - __main__ - DEBUG - Database connection pool initialized
+2025-10-26 13:53:26,709 - ragAgent - INFO - Connection db_connection_pool status: 0/20 connections in use
+2025-10-26 13:53:26,726 - ragAgent - INFO - Connection db_connection_pool status: OK, test connection successful
+2025-10-26 13:53:26,802 - ragAgent - INFO - Graph visualization saved as graph.png
+2025-10-26 13:54:04,074 - __main__ - INFO - The user's input is: 头疼可能是什么病
+2025-10-26 13:54:04,100 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:54:04,101 - ragAgent - INFO - agent question:content='头疼可能是什么病' additional_kwargs={} response_metadata={} id='e8883a10-6cd4-478b-b294-7985492ec546'
+2025-10-26 13:54:05,323 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_agent.txt
+2025-10-26 13:54:06,943 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:07,139 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:07,286 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:07,477 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:07,482 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:09,405 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:54:09,408 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:54:09,409 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_grade.txt
+2025-10-26 13:54:10,818 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:54:10,821 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 0
+2025-10-26 13:54:10,821 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:54:10,824 - ragAgent - INFO - Rewriting query
+2025-10-26 13:54:10,825 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_rewrite.txt
+2025-10-26 13:54:12,185 - ragAgent - INFO - Rewrite count: 1
+2025-10-26 13:54:12,189 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:54:12,190 - ragAgent - INFO - agent question:content='头痛可能由哪些常见疾病或因素引起？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--c67bce84-5391-48ea-a6cf-b850bd312830'
+2025-10-26 13:54:13,099 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:54:14,161 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:14,347 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:14,508 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:14,675 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:14,679 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:14,744 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:54:14,746 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:54:14,747 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:54:15,489 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:54:15,491 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 1
+2025-10-26 13:54:15,492 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:54:15,494 - ragAgent - INFO - Rewriting query
+2025-10-26 13:54:15,496 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:54:16,503 - ragAgent - INFO - Rewrite count: 2
+2025-10-26 13:54:16,506 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:54:16,507 - ragAgent - INFO - agent question:content='经常性头疼可能是由哪些常见疾病引起的？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--090d7da5-c697-41ad-af7c-19b95676d967'
+2025-10-26 13:54:16,942 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:54:18,023 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:18,208 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:18,395 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:18,557 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:18,640 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:18,644 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:18,698 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:54:18,700 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:54:18,701 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:54:19,526 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:54:19,529 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 2
+2025-10-26 13:54:19,530 - ragAgent - INFO - Documents are not relevant or scoring failed, proceeding to rewrite
+2025-10-26 13:54:19,532 - ragAgent - INFO - Rewriting query
+2025-10-26 13:54:19,533 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_rewrite.txt
+2025-10-26 13:54:20,586 - ragAgent - INFO - Rewrite count: 3
+2025-10-26 13:54:20,588 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:54:20,589 - ragAgent - INFO - agent question:content='头疼可能由哪些常见原因引起？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--a5830acb-89d4-4c17-8e1c-69e71436757b'
+2025-10-26 13:54:21,014 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:54:22,164 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:22,315 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:22,590 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:22,739 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:22,741 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:22,761 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:54:22,764 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:54:22,765 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:54:23,908 - ragAgent - INFO - Document relevance score: no
+2025-10-26 13:54:23,910 - ragAgent - INFO - Routing based on relevance_score: no, rewrite_count: 3
+2025-10-26 13:54:23,910 - ragAgent - INFO - Max rewrite limit reached, proceeding to generate
+2025-10-26 13:54:23,914 - ragAgent - INFO - Generating final response
+2025-10-26 13:54:23,915 - ragAgent - INFO - Loading and caching prompt template from prompts/prompt_template_generate.txt
+2025-10-26 13:54:24,625 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:54:24,629 - __main__ - INFO - Streaming chunk from generate: 问题
+2025-10-26 13:54:24,630 - __main__ - INFO - Streaming chunk from generate: 和agent任务
+2025-10-26 13:54:24,630 - __main__ - INFO - Streaming chunk from generate: 不相关
+2025-10-26 13:54:24,632 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:54:26,710 - ragAgent - INFO - Connection db_connection_pool status: 0/20 connections in use
+2025-10-26 13:54:44,342 - __main__ - INFO - The user's input is: 肺气肿的症状
+2025-10-26 13:54:44,352 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:54:44,353 - ragAgent - INFO - agent question:content='肺气肿的症状' additional_kwargs={} response_metadata={} id='5e104d45-f329-4c34-b4fe-8031ec8cdf6b'
+2025-10-26 13:54:45,279 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:54:46,977 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:47,393 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:47,631 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:47,815 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:47,817 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:54:47,937 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:54:47,940 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:54:47,941 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:54:49,024 - ragAgent - INFO - Document relevance score: yes
+2025-10-26 13:54:49,026 - ragAgent - INFO - Routing based on relevance_score: yes, rewrite_count: 0
+2025-10-26 13:54:49,027 - ragAgent - INFO - Documents are relevant, proceeding to generate
+2025-10-26 13:54:49,029 - ragAgent - INFO - Generating final response
+2025-10-26 13:54:49,031 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_generate.txt
+2025-10-26 13:54:49,914 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:54:49,915 - __main__ - INFO - Streaming chunk from generate: 肺
+2025-10-26 13:54:50,004 - __main__ - INFO - Streaming chunk from generate: 气肿的症状
+2025-10-26 13:54:50,089 - __main__ - INFO - Streaming chunk from generate: 包括但不限于
+2025-10-26 13:54:50,198 - __main__ - INFO - Streaming chunk from generate: 以下几点：
+
+2025-10-26 13:54:50,350 - __main__ - INFO - Streaming chunk from generate: - 呼
+2025-10-26 13:54:50,515 - __main__ - INFO - Streaming chunk from generate: 吸音减弱
+-
+2025-10-26 13:54:50,712 - __main__ - INFO - Streaming chunk from generate:  纵隔浊音界
+2025-10-26 13:54:51,072 - __main__ - INFO - Streaming chunk from generate: 扩大
+- 肺
+2025-10-26 13:54:51,240 - __main__ - INFO - Streaming chunk from generate: 部啰音
+-
+2025-10-26 13:54:51,476 - __main__ - INFO - Streaming chunk from generate:  呼气音延长
+
+2025-10-26 13:54:51,577 - __main__ - INFO - Streaming chunk from generate: - 横膈低
+2025-10-26 13:54:51,743 - __main__ - INFO - Streaming chunk from generate: 平
+- 胸
+2025-10-26 13:54:51,932 - __main__ - INFO - Streaming chunk from generate: 闷
+- 小支
+2025-10-26 13:54:52,081 - __main__ - INFO - Streaming chunk from generate: 气管粘膜水肿
+
+2025-10-26 13:54:52,436 - __main__ - INFO - Streaming chunk from generate: - 桶状胸
+2025-10-26 13:54:52,627 - __main__ - INFO - Streaming chunk from generate: 
+- 黏稠或
+2025-10-26 13:54:52,772 - __main__ - INFO - Streaming chunk from generate: 脓性痰
+
+
+2025-10-26 13:54:53,027 - __main__ - INFO - Streaming chunk from generate: 如果您或您认识的人
+2025-10-26 13:54:53,220 - __main__ - INFO - Streaming chunk from generate: 有上述症状，并
+2025-10-26 13:54:53,449 - __main__ - INFO - Streaming chunk from generate: 怀疑是肺气肿
+2025-10-26 13:54:53,671 - __main__ - INFO - Streaming chunk from generate: ，请及时就医以
+2025-10-26 13:54:53,861 - __main__ - INFO - Streaming chunk from generate: 获得专业的诊断和治疗建议
+2025-10-26 13:54:53,930 - __main__ - INFO - Streaming chunk from generate: 。
+2025-10-26 13:54:53,949 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:55:24,037 - __main__ - INFO - The user's input is: 我胸闷，可能是什么病
+2025-10-26 13:55:24,047 - ragAgent - INFO - Agent processing user query
+2025-10-26 13:55:24,049 - ragAgent - INFO - agent question:content='我胸闷，可能是什么病' additional_kwargs={} response_metadata={} id='14e6d00e-6593-4d10-ac3c-b0e72f19693c'
+2025-10-26 13:55:25,026 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_agent.txt
+2025-10-26 13:55:26,712 - ragAgent - INFO - Connection db_connection_pool status: 0/20 connections in use
+2025-10-26 13:55:26,886 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:55:26,998 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:55:27,083 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:55:27,178 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:55:27,182 - __main__ - INFO - Streaming chunk from agent: 
+2025-10-26 13:55:27,220 - ragAgent - INFO - Tool retriever_tool routed to grade_documents based on config
+2025-10-26 13:55:27,223 - ragAgent - INFO - Grading documents for relevance
+2025-10-26 13:55:27,224 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_grade.txt
+2025-10-26 13:55:28,352 - ragAgent - INFO - Document relevance score: yes
+2025-10-26 13:55:28,353 - ragAgent - INFO - Routing based on relevance_score: yes, rewrite_count: 0
+2025-10-26 13:55:28,354 - ragAgent - INFO - Documents are relevant, proceeding to generate
+2025-10-26 13:55:28,357 - ragAgent - INFO - Generating final response
+2025-10-26 13:55:28,358 - ragAgent - INFO - Using cached prompt template for prompts/prompt_template_generate.txt
+2025-10-26 13:55:29,008 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:55:29,009 - __main__ - INFO - Streaming chunk from generate: 胸
+2025-10-26 13:55:29,085 - __main__ - INFO - Streaming chunk from generate: 闷可能是多种
+2025-10-26 13:55:29,430 - __main__ - INFO - Streaming chunk from generate: 健康
+2025-10-26 13:55:29,603 - __main__ - INFO - Streaming chunk from generate: 问题的症状
+2025-10-26 13:55:29,840 - __main__ - INFO - Streaming chunk from generate: ，根据已知的信息
+2025-10-26 13:55:29,917 - __main__ - INFO - Streaming chunk from generate: ，它可能与以下
+2025-10-26 13:55:30,159 - __main__ - INFO - Streaming chunk from generate: 几种情况有关：
+2025-10-26 13:55:30,333 - __main__ - INFO - Streaming chunk from generate: 单纯性肺嗜酸粒
+2025-10-26 13:55:30,470 - __main__ - INFO - Streaming chunk from generate: 细胞浸润症、百
+2025-10-26 13:55:30,637 - __main__ - INFO - Streaming chunk from generate: 日咳、肺大疱
+2025-10-26 13:55:30,827 - __main__ - INFO - Streaming chunk from generate: 以及肺气肿
+2025-10-26 13:55:31,301 - __main__ - INFO - Streaming chunk from generate: 。但是，请注意这
+2025-10-26 13:55:31,476 - __main__ - INFO - Streaming chunk from generate: 并不意味着您一定
+2025-10-26 13:55:31,699 - __main__ - INFO - Streaming chunk from generate: 患有上述疾病之一
+2025-10-26 13:55:32,054 - __main__ - INFO - Streaming chunk from generate: 。如果您感到不适
+2025-10-26 13:55:32,243 - __main__ - INFO - Streaming chunk from generate: ，建议尽快就医并进行全面
+2025-10-26 13:55:32,539 - __main__ - INFO - Streaming chunk from generate: 检查以确定具体原因
+2025-10-26 13:55:32,675 - __main__ - INFO - Streaming chunk from generate: ，并获得适当的治疗
+2025-10-26 13:55:32,946 - __main__ - INFO - Streaming chunk from generate: 建议。请不要
+2025-10-26 13:55:33,084 - __main__ - INFO - Streaming chunk from generate: 自我诊断或延迟
+2025-10-26 13:55:33,372 - __main__ - INFO - Streaming chunk from generate: 寻求专业医疗帮助。
+2025-10-26 13:55:33,454 - __main__ - INFO - Streaming chunk from generate: 
+2025-10-26 13:56:21,525 - __main__ - INFO - Database connection pool closed
+2025-10-26 13:56:21,526 - __main__ - INFO - The service has been shut down

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15        # Specify a specific version
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: anthony
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: postgres
+      TZ: Asia/Shanghai       # Set time zone
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:              # Health check
+      test: ["CMD", "pg_isready", "-U", "nange"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    command: ["postgres", "-c", "max_connections=200"]  # Custom configuration
+
+volumes:
+  pgdata:
